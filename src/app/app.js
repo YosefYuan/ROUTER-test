@@ -1,11 +1,10 @@
-/* jshint esversion: 6 */
 import Vue from 'vue';
 
 const EventBus = new Vue();
 
 window.addEventListener('popstate', () => {
   EventBus.$emit('navigate');
-})
+});
 const CharizardCard = {
   name: 'charizard-card',
   template: `
